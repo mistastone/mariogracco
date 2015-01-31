@@ -1,0 +1,171 @@
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+
+// My Code Starts Here
+
+// General Styles
+
+.line{
+	width: 65%;
+	height: 1px;
+	background-color: #ccc;
+	margin: 0 auto;
+	margin-top: 38px;
+}
+
+h1 {
+	color: #fff;
+	font: 300 44px/150% "Lato",sans-serif;
+	padding: 20px;
+	// margin-left: 40px;
+}
+
+h2 {
+	font: 400 40px/150% "Lato", "Open Sans", sans-serif;
+}
+
+p {
+	font: 300 22px/150% "Lato", "Open Sans", sans-serif;
+}
+
+.hero {
+	background-image: url("images/banner2.jpg");
+	background-size: cover;
+	background-position: 0 40%;
+	height: 500px;
+	width: 100%;
+	max-width: 100%;
+}
+
+.mainheader {
+	width: 100%;
+	background-color: rgb(203, 24, 30);
+}
+
+.mainnav {
+	text-align: right;
+	background-color: rgb(187, 22, 28);
+	ul {
+		padding: 10px;
+	}
+}
+
+.mainnav ul li {
+	display: inline-block;
+	a {
+		color: #fff;
+		font: 300 24px/150% "Lato", sans-serif;
+		padding: 12px;
+		text-decoration: none;
+		transition: background-color 0.5s ease;
+		&:hover {
+			background-color: #CB181E;
+			transition: background-color 0.5s ease;
+		}
+	}
+}
+
+
+// Meet Mario Section
+
+.meetmario {
+	margin: 25px 25px;
+}
+
+.meettext {
+	padding-bottom: 35px;
+}
+
+.meetimage img {
+	border: 1px solid #d1d3d4;
+}
+
+.meetimage .img-responsive {
+	margin: 0 auto;
+}
