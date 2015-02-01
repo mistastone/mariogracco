@@ -91,53 +91,88 @@ input, select {
 
 // General Styles
 
-.line{
+
+// .mainsection {
+// 	padding: 25px 25px;
+// }
+
+
+.line {
 	width: 65%;
 	height: 1px;
 	background-color: #ccc;
 	margin: 0 auto;
-	margin-top: 38px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	// margin-top: 38px;
 }
+
 
 h1 {
 	color: #fff;
 	font: 300 44px/150% "Lato",sans-serif;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
 	// margin-left: 40px;
 }
 
 h2 {
 	font: 400 40px/150% "Lato", "Open Sans", sans-serif;
+	text-align: center;
 }
 
 p {
 	font: 300 22px/150% "Lato", "Open Sans", sans-serif;
 }
 
-.hero {
-	background-image: url("images/banner2.jpg");
-	background-size: cover;
-	background-position: 0 40%;
-	height: 500px;
-	width: 100%;
-	max-width: 100%;
+
+.hero img {
+	// background-image: url("images/bannerbig.jpg");
+	// background-size: cover;
+	// background-position: 0 40%;
+	// height: 500px;
+	margin: 0 auto;
+	// padding-top: 25px;
+	// width: 100%;
+	// max-width: 100%;
 }
 
 .mainheader {
 	width: 100%;
-	background-color: rgb(203, 24, 30);
+	// background-color: rgb(203, 24, 30);
+	background-color: rgb(187, 22, 28);
 }
 
 .mainnav {
+	box-shadow: 0 8px 6px -7px #000;
+	padding: 10px 10px;
 	text-align: right;
 	background-color: rgb(187, 22, 28);
+	// background-color: rgb(203, 24, 30);
 	ul {
 		padding: 10px;
 	}
 }
 
+.white {
+	background-color: #fff;
+	width: 90%;
+	margin-bottom: 0;
+}
+
+
+// .mainnav ul li:first-child {
+// 	// float: left;
+// 	// text-align: left;
+// 	color: #fff;
+// 	font: 300 44px/150% "Lato",sans-serif;
+// 	padding: 20px;
+// }
+
 .mainnav ul li {
+	text-align: right;
 	display: inline-block;
+	// float: right;
 	a {
 		color: #fff;
 		font: 300 24px/150% "Lato", sans-serif;
@@ -152,15 +187,22 @@ p {
 }
 
 
+.mainnav ul li:last-child a {
+	font-weight: 400;
+	background-color: #fff;
+	color: rgb(187, 22, 28);
+	border-radius: 5px;
+	transition: all 0.5s ease;
+	box-shadow: 2px 2px 2px #262626;
+	&:hover {
+		background-color: rgb(203, 24, 30);
+		color: #fff;
+		transition: all 0.5s ease;
+	}
+}
+
+
 // Meet Mario Section
-
-.meetmario {
-	margin: 25px 25px;
-}
-
-.meettext {
-	padding-bottom: 35px;
-}
 
 .meetimage img {
 	border: 1px solid #d1d3d4;
@@ -168,4 +210,49 @@ p {
 
 .meetimage .img-responsive {
 	margin: 0 auto;
+}
+
+// Testimonials/Endorsements Section
+
+.testimonials {
+	background-image: url('images/testpic.jpg');
+	background-size: cover;
+	background-position: 15% 15%;
+	width: 100%;
+	height: 350px;
+	max-width: 100%;
+	vertical-align: middle;
+
+}
+
+.testoverlay {
+	max-width: 100%;
+	width: 100%;
+	height: 350px;
+	background-color: rgba(255,255,255,0.85);
+	h2 {
+		padding-top: 35px;
+	}
+}
+
+.textslider {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 45px;
+	margin-top: 45px;
+	p {
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	font: 300 22px/150% "Lato", Open-Sans, sans-serif;
+}
+}
+
+
+
+
+// Contact Mario Section
+
+.contact p {
+	text-align: center;
 }
