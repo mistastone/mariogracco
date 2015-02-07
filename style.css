@@ -84,6 +84,13 @@ hr {
 input, select {
   vertical-align: middle; }
 
+.slicknav_menu {
+  display: none; }
+
+#menu {
+  display: none; }
+
+.smallline,
 .line {
   width: 65%;
   height: 1px;
@@ -92,15 +99,19 @@ input, select {
   margin-top: 35px;
   margin-bottom: 35px; }
 
+.smallline {
+  width: 10%; }
+
 h1 {
   color: #fff;
   font: 300 44px/150% "Lato",sans-serif;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 20px; }
 
 h2 {
   font: 400 40px/150% "Lato", "Open Sans", sans-serif;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 20px; }
 
 p {
   font: 300 22px/150% "Lato", "Open Sans", sans-serif; }
@@ -110,52 +121,61 @@ p {
 
 .mainheader {
   width: 100%;
-  background-color: #bb161c; }
+  background-color: #bb161c;
+  background-image: -webkit-linear-gradient(#bb161c, #d61921);
+  background-image: linear-gradient(#bb161c, #d61921); }
 
 .mainnav {
+  clear: both;
   box-shadow: 0 8px 6px -7px #000;
-  padding: 10px 10px;
-  text-align: right;
-  background-color: #bb161c; }
+  padding: 5px 5px;
+  text-align: right; }
   .mainnav ul {
     padding: 10px; }
+
+.titlebanner h1 {
+  float: left; }
+
+.titlebanner h3 a {
+  float: right;
+  font: 400 20px/150% "Lato", sans-serif;
+  color: #CB181E;
+  padding: 9px;
+  margin-top: 20px;
+  margin-right: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #262626;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
+  .titlebanner h3 a:hover {
+    background-color: #cb181e;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
 
 .white {
   background-color: #fff;
   width: 90%;
-  margin-bottom: 0; }
+  margin-top: 10px;
+  margin-bottom: 0;
+  clear: both; }
 
 .mainnav ul li {
   text-align: right;
   display: inline-block; }
   .mainnav ul li a {
     color: #fff;
-    font: 300 24px/150% "Lato", sans-serif;
+    font: 300 20px/150% "Lato", sans-serif;
     padding: 12px;
     text-decoration: none;
     -webkit-transition: background-color 0.5s ease;
             transition: background-color 0.5s ease; }
     .mainnav ul li a:hover {
-      background-color: #CB181E;
+      background-color: #BB161C;
       -webkit-transition: background-color 0.5s ease;
               transition: background-color 0.5s ease; }
-
-.mainnav ul li:last-child a {
-  font-weight: 400;
-  background-color: #fff;
-  color: #bb161c;
-  border-radius: 5px;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-  box-shadow: 2px 2px 2px #262626; }
-  .mainnav ul li:last-child a:hover {
-    background-color: #cb181e;
-    color: #fff;
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease; }
-
-.meetimage img {
-  border: 1px solid #d1d3d4; }
 
 .meetimage .img-responsive {
   margin: 0 auto; }
@@ -188,5 +208,84 @@ p {
     text-align: center;
     font: 300 22px/150% "Lato", Open-Sans, sans-serif; }
 
-.contact p {
+.riding .hero img {
+  padding-bottom: 20px;
+  width: 550px; }
+
+.indent p {
+  padding-left: 50px;
+  font-size: 18px; }
+
+.riding p.listdata {
+  font-weight: 400; }
+
+.ridinginfo {
+  padding-left: 40px; }
+
+.boundaries p.listdata {
+  font-weight: 300; }
+
+.issues .listtext p:first-child {
+  padding-bottom: 20px; }
+
+.issues .listtext p {
+  padding-bottom: 20px; }
+
+.issues .listtext p:last-child {
+  padding-bottom: 0; }
+
+.contact p,
+.donatemail p {
   text-align: center; }
+
+.listitem {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 26px; }
+
+p.listdata,
+.listdata {
+  padding-left: 20px; }
+
+.learnlist .listtext p:last-child {
+  padding-top: 20px; }
+
+.donatepage .listdata p {
+  padding-top: 20px; }
+
+.donatepage .listdata p:first-child {
+  padding-top: 0; }
+
+.donatemail p {
+  font-size: 26px; }
+
+footer {
+  width: 100%;
+  background-color: #bb161c;
+  margin-top: 20px; }
+  footer p {
+    font: 300 14px/150% "Lato", Open-Sans, sans-serif;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 3px; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline; }
+
+.vertical {
+  border-right: 1px solid #ccc;
+  margin-right: 20px;
+  padding-left: 20px; }
+
+@media (max-width: 1200px) {
+  .meetimage img {
+    padding-top: 20px; } }
+@media (max-width: 820px) {
+  .mainheader {
+    display: none; }
+
+  .slicknav_menu {
+    display: block; } }

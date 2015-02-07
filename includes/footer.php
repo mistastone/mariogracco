@@ -8,9 +8,11 @@
     <script type='text/javascript' src='slicknav/jquery.slicknav.min.js'></script>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
 
-<footer>
-	
-</footer>
 
+<div class="line"></div>
+
+<footer>
+    <p>&#169; Mario G. Racco 2015&nbsp;&nbsp;&nbsp;All Rights Reserved<span class = "vertical"></span><a href="http://www.bymichaelstone.com">Designed by Michael Stone</p></a>
+</footer>
 
 

@@ -26,42 +26,42 @@
     <section class="mainheader">
       <div class="titlebanner">
           <h1>Mario G. Racco Nomination</h1>
+          <h3><a href="donate.php">Make a Donation</h3></a>
       </div>
 
     <div class="white line"></div>
 
         <nav class = "mainnav">
           <ul>
-            <li><a href="#home">Home</li></a>
-            <li><a href="#learnmore">Learn More</li></a>
-            <li><a href="#involved">Get Involved</li></a>
-            <li><a href="#contact">Contact</li></a>
-            <li><a href="#donate">Make a Donation</li></a>
+            <li><a href="index.php">Home</li></a>
+            <li><a href="learnmore.php">Learn More</li></a>
+            <li><a href="involved.php">Get Involved</li></a>
+            <li><a href="index.php#contact">Contact</li></a>
+            <!-- <li><a href="#donate">Make a Donation</li></a> -->
           </ul>
         </nav>
 
     </section>
 
-<div class="line firstline"></div>
+<!-- <div class="line firstline"></div> -->
   
-    <div class="hero">
+    <!-- <div class="hero">
       <img src="images/bannerbigedit.jpg" class = "img-responsive" alt="">
-    </div>
+    </div> -->
   
 
 
 <!-- MOBILE NAVIGATION -->
 
- <!--  <nav class = "mobilenav"> 
-  <p>1120 Finch Avenue West <span class = "vertical"></span>416-667-9393</p>
+  <nav class = "mobilenav"> 
       <ul id="menu">
-        <li><a href = "#home">Home</a></li>
-        <li><a href = "#focus">Get Involved</a></li>
+        <li><a href="index.php">Home</li></a>
+        <li><a href="learnmore.php">Learn More</li></a>
+        <li><a href="involved.php">Get Involved</li></a>
+        <li><a href="index.php#contact">Contact</li></a>
       </ul>
     </div>
-  </nav> -->
-
-<!-- TITLE BANNER -->
+  </nav>
 
   
   </body>
