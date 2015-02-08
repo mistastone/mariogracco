@@ -21,7 +21,7 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent; } 
 
 body {
   line-height: 1; }
@@ -30,7 +30,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-nav ul { 
+nav ul {
   list-style: none; }
 
 blockquote, q {
@@ -257,8 +257,27 @@ p.listdata,
 .donatepage .listdata p:first-child {
   padding-top: 0; }
 
-.donatemail p {
-  font-size: 26px; }
+#signup {
+  color: #fff;
+  padding: 9px;
+  margin-top: 20px;
+  margin-right: 25px;
+  background-color: #cb181e;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #262626;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  text-align: center; }
+  #signup:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #CB181E;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease; }
+
+#signup p {
+  font-weight: 400; }
 
 footer {
   width: 100%;
@@ -280,14 +299,38 @@ footer {
   margin-right: 20px;
   padding-left: 20px; }
 
+.mobilenav p {
+  display: none; }
+
 @media (max-width: 1200px) {
   .meetimage img {
     padding-top: 20px; } }
 @media (max-width: 820px) {
+  body {
+    padding-top: 68px; }
+
   .mainheader {
     display: none; }
 
   .slicknav_menu {
-    display: block; } }
+    display: block; }
+
+  .mobilenav p {
+    font: 300 31px "Lato", Open-Sans, sans-serif;
+    color: #fff;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding-left: 15px;
+    padding-top: 14px; }
+
+  body > div.slicknav_menu > ul > li:nth-child(1) > a {
+    background: #fff;
+    color: #BB161C;
+    font-weight: 400;
+    padding: 12px;
+    margin-top: 10px; } }
 .success-message {
   display: none; }

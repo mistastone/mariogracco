@@ -36,7 +36,7 @@
             <li><a href="index.php">Home</li></a>
             <li><a href="learnmore.php">Learn More</li></a>
             <li><a href="involved.php">Get Involved</li></a>
-            <li><a href="index.php#contact">Contact</li></a>
+            <li><a href="index.php#contact">Contact</li></a> 
             <!-- <li><a href="#donate">Make a Donation</li></a> -->
           </ul>
         </nav>
@@ -54,7 +54,9 @@
 <!-- MOBILE NAVIGATION -->
 
   <nav class = "mobilenav"> 
+      <p>Mario G. Racco</p> 
       <ul id="menu">
+        <li><a href="donate.php">Make a Donation</li></a>
         <li><a href="index.php">Home</li></a>
         <li><a href="learnmore.php">Learn More</li></a>
         <li><a href="involved.php">Get Involved</li></a>

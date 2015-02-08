@@ -90,7 +90,7 @@ input, select {
 // My Code Starts Here
 
 .slicknav_menu {
-	display:none;
+	display: none;
 }
 
 #menu {
@@ -362,9 +362,30 @@ p.listdata,
 .donatepage .listdata p:first-child {
 	padding-top: 0;
 }
+ 
+// Get Involved Page
 
-.donatemail p {
-	font-size: 26px;
+#signup {
+	color: #fff;
+	padding: 9px;
+	margin-top: 20px;
+	margin-right: 25px;
+	background-color: rgb(203, 24, 30);
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #262626;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	text-align: center;
+	&:hover {
+		background-color: #fff;
+		cursor: pointer;
+		color: #CB181E;
+		transition: all 0.5s ease;
+	}
+}
+
+#signup p {
+	font-weight: 400;
 }
 
 
@@ -395,6 +416,10 @@ footer {
 	padding-left: 20px;
 }
 
+.mobilenav p {
+	display: none;
+}
+
 // Media Queries
 
 @media (max-width: 1200px) {
@@ -404,13 +429,37 @@ footer {
 }
 
 @media (max-width: 820px) {
+	body {
+		padding-top: 68px;
+	}
+
 	.mainheader {
 		display:none;
 	}
-
 	.slicknav_menu {
-		display:block;
+		display: block;
 	}
+
+	.mobilenav p {
+		font: 300 31px "Lato", Open-Sans, sans-serif;
+		color: #fff;
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		padding-left: 15px;
+		padding-top: 14px;
+	}
+ 	
+ 	body > div.slicknav_menu > ul > li:nth-child(1) > a {
+ 		background: #fff;
+ 		color: #BB161C;
+ 		font-weight: 400;
+ 		padding: 12px;
+ 		margin-top: 10px;
+ 	}
+
 }
 
 .success-message {

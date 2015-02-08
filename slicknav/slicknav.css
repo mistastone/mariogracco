@@ -68,7 +68,8 @@
 }
 .slicknav_menu {
     padding:5px;
-    background-color: rgba(255,255,255,0.95);
+    background-color: rgba(187, 22, 28, 0.95);
+    top: 0; 
     border-bottom: 1px solid #ccc;
     position: fixed;
     z-index: 999;
@@ -95,15 +96,18 @@
     margin:2px 5px;
 }
 .slicknav_nav a{
+    font: 300 20px "Lato", Open-Sans, sans-serif;
     padding:5px 10px;
     margin:2px 5px;
     text-decoration:none;
-    color:#000;
+    color:#fff;
     text-align: center;
-    font-family: "Lato", Open-Sans, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
 }
+
+.slicknav_nav a:first-child {
+    padding-top: 12px;
+}
+
 
 .slicknav_nav a {
     outline: none;
