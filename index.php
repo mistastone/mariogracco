@@ -106,10 +106,11 @@ include('includes/header.php');
 
         <p class="listdata">1. The Economy</p>
         <p class="listdata">2. Unemployment, especially for our youth community</p>
-        <p class="listdata">3. National and International events on security and terrorism</p>
-        <p class="listdata">4. Infrastructure and the lack of it</p>
-        <p class="listdata">5. Working with the provincial and municipal partners to coordinate better investments needed to keep our communities healthy and vibrant</p>
-        <p class="listdata">6. Reduce gridlock so that the people have more family time and the economy will be more efficient</p> 
+        <p class="listdata">3. Health Care/Child Care</p>
+        <p class="listdata">4. National and International events on security and terrorism</p>
+        <p class="listdata">5. Infrastructure and the lack of it</p>
+        <p class="listdata">6. Working with the provincial and municipal partners to coordinate better investments needed to keep our communities healthy and vibrant</p>
+        <p class="listdata">7. Reduce gridlock so that the people have more family time and the economy will be more efficient</p> 
         
         <p>There are many more issues that are important to you and I want to hear from you, so that together we can decide on the issues to address in the Parliament of Canada.</p>
 

@@ -16,7 +16,7 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
@@ -122,8 +122,7 @@ p {
 .mainheader {
   width: 100%;
   background-color: #bb161c;
-  background-image: -webkit-linear-gradient(#bb161c, #d61921);
-  background-image: linear-gradient(#bb161c, #d61921); }
+  z-index: 9999; }
 
 .mainnav {
   clear: both;
@@ -131,27 +130,26 @@ p {
   padding: 5px 5px;
   text-align: center; }
   .mainnav ul {
-    padding: 10px;
-    text-transform: uppercase; }
+    padding: 10px; }
 
 .mainnav ul li {
   text-align: right;
   display: inline-block; }
   .mainnav ul li a {
     color: #fff;
-    font: 300 21px/150% "Lato", sans-serif;
+    font: 300 23px/150% "Lato", sans-serif;
     padding: 12px;
     padding-right: 40px;
     padding-left: 40px;
     text-decoration: none; }
     .mainnav ul li a:hover {
-      border-bottom: 1px solid #fff; }
+      border-bottom: 1px solid #fff; } 
 
 .titlebanner h1 {
   float: left; }
 
 .titlebanner h1 span {
-  font-size: 22px; }
+  font-size: 23px; }
 
 .titlebanner h3 a {
   float: right;

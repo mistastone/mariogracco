@@ -89,6 +89,10 @@ input, select {
 
 // My Code Starts Here
 
+// body {
+// 	padding-top: 153px;
+// }
+
 .slicknav_menu {
 	display: none;
 }
@@ -151,9 +155,12 @@ p {
 }
 
 .mainheader {
+	// position: fixed;
 	width: 100%;
+	// top: 0;
 	background-color: rgb(187, 22, 28);
-	background-image: linear-gradient(#BB161C,#D61921);
+	z-index: 9999;
+	// background-image: linear-gradient(#BB161C,#D61921);
 	// background-color: rgb(203, 24, 30);
 }
 
@@ -167,9 +174,9 @@ p {
 	// background-color: rgb(203, 24, 30);
 	ul {
 		padding: 10px;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
-}
+} 
 
 .mainnav ul li {
 	text-align: right;
@@ -177,7 +184,7 @@ p {
 	// float: right;
 	a {
 		color: #fff;
-		font: 300 21px/150% "Lato", sans-serif;
+		font: 300 23px/150% "Lato", sans-serif;
 		padding: 12px;
 		padding-right: 40px;
 		padding-left: 40px;
@@ -228,7 +235,7 @@ p {
 }
 
 .titlebanner h1 span {
-	font-size: 22px;
+	font-size: 23px;
 }
 
 .titlebanner h3 a {
