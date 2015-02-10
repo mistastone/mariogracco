@@ -12,7 +12,8 @@ include('includes/header.php');
 
 	<div class="hero">
       <img src="images/involvedbanner.jpg" class = "img-responsive" alt="">
-    </div>
+      <p style= "text-align: center; padding-top: 5px; font-size: 20px;">Location: New Westminster Drive & Promenade Circle – Vaughan</p>
+    </div> 
 
 <div class="line"></div> 
 	

@@ -16,12 +16,12 @@ article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
-  padding: 0;
+  padding: 0; 
   border: 0;
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; } 
+  background: transparent; }
 
 body {
   line-height: 1; }
@@ -104,7 +104,7 @@ input, select {
 
 h1 {
   color: #fff;
-  font: 300 44px/150% "Lato",sans-serif;
+  font: 300 46px/150% "Lato",sans-serif;
   padding-top: 10px;
   padding-left: 20px; }
 
@@ -129,12 +129,29 @@ p {
   clear: both;
   box-shadow: 0 8px 6px -7px #000;
   padding: 5px 5px;
-  text-align: right; }
+  text-align: center; }
   .mainnav ul {
-    padding: 10px; }
+    padding: 10px;
+    text-transform: uppercase; }
+
+.mainnav ul li {
+  text-align: right;
+  display: inline-block; }
+  .mainnav ul li a {
+    color: #fff;
+    font: 300 21px/150% "Lato", sans-serif;
+    padding: 12px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-decoration: none; }
+    .mainnav ul li a:hover {
+      border-bottom: 1px solid #fff; }
 
 .titlebanner h1 {
   float: left; }
+
+.titlebanner h1 span {
+  font-size: 22px; }
 
 .titlebanner h3 a {
   float: right;
@@ -144,8 +161,8 @@ p {
   margin-top: 20px;
   margin-right: 25px;
   background-color: #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #262626;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease; }
@@ -161,21 +178,6 @@ p {
   margin-top: 10px;
   margin-bottom: 0;
   clear: both; }
-
-.mainnav ul li {
-  text-align: right;
-  display: inline-block; }
-  .mainnav ul li a {
-    color: #fff;
-    font: 300 20px/150% "Lato", sans-serif;
-    padding: 12px;
-    text-decoration: none;
-    -webkit-transition: background-color 0.5s ease;
-            transition: background-color 0.5s ease; }
-    .mainnav ul li a:hover {
-      background-color: #BB161C;
-      -webkit-transition: background-color 0.5s ease;
-              transition: background-color 0.5s ease; }
 
 .meetimage .img-responsive {
   margin: 0 auto; }
@@ -224,6 +226,13 @@ p {
 
 .boundaries p.listdata {
   font-weight: 300; }
+
+.boundaries p.listdata span {
+  font-weight: 400; }
+
+ul.south li {
+  list-style: none;
+  padding-left: 40px; }
 
 .issues .listtext p:first-child {
   padding-bottom: 20px; }
@@ -331,6 +340,10 @@ footer {
     color: #BB161C;
     font-weight: 400;
     padding: 12px;
-    margin-top: 10px; } }
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #262626; }
+    body > div.slicknav_menu > ul > li:nth-child(1) > a:hover {
+      text-decoration: underline; } }
 .success-message {
   display: none; }

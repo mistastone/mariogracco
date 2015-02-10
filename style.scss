@@ -122,7 +122,7 @@ input, select {
 
 h1 {
 	color: #fff;
-	font: 300 44px/150% "Lato",sans-serif;
+	font: 300 46px/150% "Lato",sans-serif;
 	padding-top: 10px;
 	padding-left: 20px;
 	// margin-left: 40px;
@@ -157,22 +157,78 @@ p {
 	// background-color: rgb(203, 24, 30);
 }
 
+
 .mainnav {
 	clear: both;
 	box-shadow: 0 8px 6px -7px #000;
 	padding: 5px 5px;
-	text-align: right;
+	text-align: center;
 	// background-color: rgb(187, 22, 28);
 	// background-color: rgb(203, 24, 30);
 	ul {
 		padding: 10px;
+		text-transform: uppercase;
 	}
 }
+
+.mainnav ul li {
+	text-align: right;
+	display: inline-block;
+	// float: right;
+	a {
+		color: #fff;
+		font: 300 21px/150% "Lato", sans-serif;
+		padding: 12px;
+		padding-right: 40px;
+		padding-left: 40px;
+		text-decoration: none;
+		&:hover {
+			// background-color: #BB161C;
+			border-bottom: 1px solid #fff;
+			// background-color: #fff;
+			// color: #BB161C;
+		}
+	}
+}
+
+// .mainnavigation {
+// 	width: 100%;
+// 	height: 75px;
+// 	h1{
+// 		float: left;
+// 		color: #BB161C;
+// 	}
+// }
+
+// .mainnavigation ul li {
+// 	float: left;
+// 	list-style: none;
+// }
+
+// .mainnavigation ul li:first-child {
+// 	color: #fff;
+// 	background-color: #BB161C;
+// 	font: 300 44px/150% "Lato",sans-serif;
+// 	padding-right: 30px;
+// 	padding-left: 20px;
+// }
+
+// .redline {
+// 	width: 40%;
+// 	height: 1px;
+// 	background-color: #BB161C;
+// 	clear: both;
+// 	margin-top: -1px;
+// }
 
 
 
 .titlebanner h1 {
 	float: left;
+}
+
+.titlebanner h1 span {
+	font-size: 22px;
 }
 
 .titlebanner h3 a {
@@ -183,16 +239,19 @@ p {
 	margin-top: 20px;
 	margin-right: 25px;
 	background-color: #fff;
+	border: 1px solid #fff;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px #262626;
+	// box-shadow: 1px 1px 1px #262626;
 	text-decoration: none;
 	transition: all 0.5s ease;
 	&:hover {
 		background-color: rgb(203, 24, 30);
 		color: #fff;
+		// border: 1px solid #fff;
 		transition: all 0.5s ease;
 	}
 }
+
 
 .white {
 	background-color: #fff;
@@ -212,22 +271,6 @@ p {
 // }
 
 
-.mainnav ul li {
-	text-align: right;
-	display: inline-block;
-	// float: right;
-	a {
-		color: #fff;
-		font: 300 20px/150% "Lato", sans-serif;
-		padding: 12px;
-		text-decoration: none;
-		transition: background-color 0.5s ease;
-		&:hover {
-			background-color: #BB161C;
-			transition: background-color 0.5s ease;
-		}
-	}
-}
 
 
 // .mainnav ul li:last-child a {
@@ -287,7 +330,7 @@ p {
 	font: 300 22px/150% "Lato", Open-Sans, sans-serif;
 }
 }
-
+ 
 // The Riding Section
 
 .riding .hero img {
@@ -310,6 +353,15 @@ p {
 
 .boundaries p.listdata {
 	font-weight: 300;
+}
+ 
+.boundaries p.listdata span {
+	font-weight: 400;
+}
+
+ul.south li {
+	list-style: none;
+	padding-left: 40px;
 }
 
 // The Issues Section
@@ -451,14 +503,21 @@ footer {
 		padding-left: 15px;
 		padding-top: 14px;
 	}
- 	
+ 	 
  	body > div.slicknav_menu > ul > li:nth-child(1) > a {
  		background: #fff;
  		color: #BB161C;
  		font-weight: 400;
  		padding: 12px;
  		margin-top: 10px;
+ 		border-radius: 5px;
+ 		box-shadow: 2px 2px 2px #262626; 
+ 		&:hover{
+ 			text-decoration: underline;
+ 		}
  	}
+
+
 
 }
 

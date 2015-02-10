@@ -26,7 +26,7 @@ include('includes/header.php');
         (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community. 
         King-Vaughan encompasses much of the City of Vaughan (Maple, Kleinburg and part of 
         Woodbridge) and the Township of King (including King City, Nobleton, Schomberg and 
-        Kettleby).</p>
+        Kettleby, Pottageville, Laskay, Snowball, Lloydtown, and Strange).</p> 
 			</div>
 		</div>
 
@@ -54,10 +54,10 @@ include('includes/header.php');
         <p>King-Vaughan is a new federal riding that will be electing its first Member of Parliament 
         (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community. 
         King-Vaughan encompasses much of the City of Vaughan (Maple, Kleinburg and part of 
-        Woodbridge) and the Township of King (including King City, Nobleton, Schomberg and 
-        Kettleby).</p>
+        Woodbridge) and the Township of King (including King City, Nobleton, Schomberg, 
+        Kettleby, Pottageville, Laskay, Snowball, Lloydtown, and Strange).</p> 
 
-        <div class="ridinginfo">
+        <div class="ridinginfo col-md-offset-3">
           <p class="listitem">The Riding is Made Up Of:</p>
           <p class="listdata">City of Vaughan</p>
             <div class="indent">
@@ -70,17 +70,25 @@ include('includes/header.php');
             <div class="indent">
               <p>King City</p>
               <p>Nobleton</p>
-              <p>Schomberg</p>
+              <p>Schomberg</p> 
               <p>Kettleby</p>
-            </div>
+              <p>Pottageville</p>
+              <p>Laskay</p>
+              <p>Snowball</p>
+              <p>Lloydtown</p> 
+              <p>Strange</p>
+            </div> 
 
           <div class="boundaries">
             <p class="listitem">The Riding Boundaries are:</p>
-            <p class="listdata">North - Highway 9</p>
-            <p class="listdata">West - Highway 50</p>
-            <p class="listdata">East - Bathurst Street</p>
-            <p class="listdata">South - Highway 400 - Bathurst, Highway 400 - Highway 50</p>
-            <p class="listdata">Rutherford Road - Major Mackenzie Drive</p>
+            <p class="listdata"><span>North</span> - Highway 9</p>
+            <p class="listdata"><span>West</span> - Highway 50</p>
+            <p class="listdata"><span>East</span> - Bathurst Street</p>
+            <p class="listdata"><span>South</span> - </p>
+            <ul class = "south">
+              <li><p class="listdata">Highway 400 to Bathurst along Rutherford Road</p></li>
+              <li><p class="listdata">Highway 400 - Highway 50 along Major Mackenzie</p></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -101,7 +109,7 @@ include('includes/header.php');
         <p class="listdata">3. National and International events on security and terrorism</p>
         <p class="listdata">4. Infrastructure and the lack of it</p>
         <p class="listdata">5. Working with the provincial and municipal partners to coordinate better investments needed to keep our communities healthy and vibrant</p>
-        <p class="listdata">6. Reduce gridlock so that the people have more family time and the economy will benefit much better</p> 
+        <p class="listdata">6. Reduce gridlock so that the people have more family time and the economy will be more efficient</p> 
         
         <p>There are many more issues that are important to you and I want to hear from you, so that together we can decide on the issues to address in the Parliament of Canada.</p>
 
@@ -145,7 +153,7 @@ include('includes/header.php');
         <div class="smallline"></div>
         <p>T: 905-760-0330</p>
         <p>F: 905-669-4808</p>
-        <p>E: <a href="mailto:mario@raccolegalservices.com?Subject=Hello" target="_top">mario@raccolegalservices.com</p></a>
+        <p>E: <a href="mailto:racco.kingvaughan@gmail.com ?Subject=Hello" target="_top">Racco.KingVaughan@gmail.com</p></a>
       </div>
     </div>
   </section>

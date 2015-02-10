@@ -33,7 +33,7 @@ if (!$errors) {
 
 	$mail->From = $email;
 	$mail->FromName = 'Nomination Website';
-	$mail->AddAddress('michael.stone2@gmail.com');   		  	  				// Add a recipient
+	$mail->AddAddress('racco.kingvaughan@gmail.com');   		  	  				// Add a recipient
 
 	$mail->IsHTML(true);                                  // Set email format to HTML
 
@@ -41,7 +41,7 @@ if (!$errors) {
 	$mail->Body    = "Hello first: $first last: $last email: $email options: $options";
 	$mail->AltBody = "Hello";
 
-	$result = $mail->Send();
+	$result = $mail->Send(); 
 	
 	if ($_POST) {
 		if ($result) echo 'Your email has been sent.';
