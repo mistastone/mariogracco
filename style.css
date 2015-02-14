@@ -106,23 +106,44 @@ h1 {
   color: #fff;
   font: 300 46px/150% "Lato",sans-serif;
   padding-top: 10px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 h2 {
   font: 400 40px/150% "Lato", "Open Sans", sans-serif;
   text-align: center;
   padding-bottom: 20px; }
 
+h4 {
+  font: 400 26px/150% "Lato", "Open Sans", sans-serif; }
+
 p {
   font: 300 22px/150% "Lato", "Open Sans", sans-serif; }
+
+body {
+  padding-top: 153px; }
+
+.scrollup {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  right: 30px;
+  bottom: 40px; }
+  .scrollup:hover {
+    cursor: pointer; }
 
 .hero img {
   margin: 0 auto; }
 
-.mainheader {
+header.mainheader {
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: #bb161c;
-  z-index: 9999; }
+  z-index: 9999;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 .mainnav {
   clear: both;
@@ -141,9 +162,23 @@ p {
     padding: 12px;
     padding-right: 40px;
     padding-left: 40px;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
     .mainnav ul li a:hover {
-      border-bottom: 1px solid #fff; } 
+      border-bottom: 1px solid #fff; }
+
+header.sticky {
+  background-color: rgba(187, 22, 28, 0.95); }
+
+header.sticky h1 {
+  font-size: 30px; }
+
+header.sticky h3 a {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 7px;
+  padding: 7px; }
 
 .titlebanner h1 {
   float: left; }
@@ -162,8 +197,8 @@ p {
   border: 1px solid #fff;
   border-radius: 5px;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
   .titlebanner h3 a:hover {
     background-color: #cb181e;
     color: #fff;
@@ -207,6 +242,27 @@ p {
     margin: 0 auto;
     text-align: center;
     font: 300 22px/150% "Lato", Open-Sans, sans-serif; }
+
+.ridingcities,
+.ridingboundaries {
+  background-image: url("images/ridingbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 35px;
+  height: 300px;
+  position: relative; }
+
+.cityinfo,
+.boundaryinfo {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .cityinfo p,
+  .boundaryinfo p {
+    display: none; }
 
 .riding .hero img {
   padding-bottom: 20px;
@@ -266,18 +322,19 @@ p.listdata,
 
 #signup {
   color: #fff;
-  padding: 9px;
-  margin-top: 20px;
-  margin-right: 25px;
   background-color: #cb181e;
+  padding: 9px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid #fff;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #262626;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
   text-align: center; }
   #signup:hover {
     background-color: #fff;
+    border: 1px solid #CB181E;
     cursor: pointer;
     color: #CB181E;
     -webkit-transition: all 0.5s ease;
@@ -285,6 +342,9 @@ p.listdata,
 
 #signup p {
   font-weight: 400; }
+
+.success-message {
+  text-align: center; }
 
 footer {
   width: 100%;
@@ -307,6 +367,9 @@ footer {
   padding-left: 20px; }
 
 .mobilenav p {
+  display: none; }
+
+.success-message {
   display: none; }
 
 @media (max-width: 1200px) {
@@ -343,5 +406,3 @@ footer {
     box-shadow: 2px 2px 2px #262626; }
     body > div.slicknav_menu > ul > li:nth-child(1) > a:hover {
       text-decoration: underline; } }
-.success-message {
-  display: none; }

@@ -103,11 +103,6 @@ input, select {
 
 // General Styles
 
-
-// .mainsection {
-// 	padding: 25px 25px;
-// }
-
 .smallline,
 .line {
 	width: 65%;
@@ -129,8 +124,10 @@ h1 {
 	font: 300 46px/150% "Lato",sans-serif;
 	padding-top: 10px;
 	padding-left: 20px;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease
 	// margin-left: 40px;
-}
+} 
 
 h2 {
 	font: 400 40px/150% "Lato", "Open Sans", sans-serif;
@@ -138,30 +135,43 @@ h2 {
 	padding-bottom: 20px;
 }
 
+h4 {
+	font: 400 26px/150% "Lato", "Open Sans", sans-serif;
+}
+
 p {
 	font: 300 22px/150% "Lato", "Open Sans", sans-serif;
 }
 
+body {
+		padding-top: 153px;
+	}
 
-.hero img {
-	// background-image: url("images/bannerbig.jpg");
-	// background-size: cover;
-	// background-position: 0 40%;
-	// height: 500px;
-	margin: 0 auto;
-	// padding-top: 25px;
-	// width: 100%;
-	// max-width: 100%;
+// Navigation Menu and Header
+
+.scrollup {
+	display:none;
+	position: fixed;
+	z-index: 99999;
+	right: 30px;
+	bottom: 40px;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
-.mainheader {
-	// position: fixed;
+.hero img {
+	margin: 0 auto;
+}
+
+header.mainheader {
+	position: fixed;
+	top: 0;
 	width: 100%;
-	// top: 0;
 	background-color: rgb(187, 22, 28);
 	z-index: 9999;
-	// background-image: linear-gradient(#BB161C,#D61921);
-	// background-color: rgb(203, 24, 30);
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease
 }
 
 
@@ -187,46 +197,38 @@ p {
 		font: 300 23px/150% "Lato", sans-serif;
 		padding: 12px;
 		padding-right: 40px;
-		padding-left: 40px;
+		padding-left: 40px; 
 		text-decoration: none;
+		-webkit-transition: all 0.4s ease;
+    	transition: all 0.4s ease;
 		&:hover {
 			// background-color: #BB161C;
 			border-bottom: 1px solid #fff;
-			// background-color: #fff;
+			// background-color: #fff; 
 			// color: #BB161C;
 		}
 	}
 }
 
-// .mainnavigation {
-// 	width: 100%;
-// 	height: 75px;
-// 	h1{
-// 		float: left;
-// 		color: #BB161C;
-// 	}
+header.sticky {
+	background-color: rgba(187, 22, 28,0.95);
+}
+
+header.sticky h1 {
+ 	font-size: 30px;  
+}
+
+header.sticky h3 a {
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 7px;
+	padding: 7px;
+}
+
+// header.sticky ul li a {
+// 	font-size: 21px;
 // }
 
-// .mainnavigation ul li {
-// 	float: left;
-// 	list-style: none;
-// }
-
-// .mainnavigation ul li:first-child {
-// 	color: #fff;
-// 	background-color: #BB161C;
-// 	font: 300 44px/150% "Lato",sans-serif;
-// 	padding-right: 30px;
-// 	padding-left: 20px;
-// }
-
-// .redline {
-// 	width: 40%;
-// 	height: 1px;
-// 	background-color: #BB161C;
-// 	clear: both;
-// 	margin-top: -1px;
-// }
 
 
 
@@ -250,7 +252,9 @@ p {
 	border-radius: 5px;
 	// box-shadow: 1px 1px 1px #262626;
 	text-decoration: none;
-	transition: all 0.5s ease;
+	// transition: all 0.5s ease;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 	&:hover {
 		background-color: rgb(203, 24, 30);
 		color: #fff;
@@ -267,33 +271,6 @@ p {
 	margin-bottom: 0;
 	clear: both;
 }
-
-
-// .mainnav ul li:first-child {
-// 	// float: left;
-// 	// text-align: left;
-// 	color: #fff;
-// 	font: 300 44px/150% "Lato",sans-serif;
-// 	padding: 20px;
-// }
-
-
-
-
-// .mainnav ul li:last-child a {
-// 	font-weight: 400;
-// 	padding: 9px;
-// 	background-color: #fff;
-// 	color: rgb(187, 22, 28);
-// 	border-radius: 5px;
-// 	transition: all 0.5s ease;
-// 	box-shadow: 2px 2px 2px #262626;
-// 	&:hover {
-// 		background-color: rgb(203, 24, 30);
-// 		color: #fff;
-// 		transition: all 0.5s ease;
-// 	}
-// }
 
 
 // Meet Mario Section
@@ -339,6 +316,40 @@ p {
 }
  
 // The Riding Section
+
+.ridingcities,
+.ridingboundaries {
+	background-image: url('images/ridingbackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 35px;
+	height: 300px;
+	position: relative;
+}
+
+.cityinfo,
+.boundaryinfo {
+	background-color: rgba(255,255,255,0.85);
+	padding: 20px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	p {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .riding .hero img {
 	padding-bottom: 20px;
@@ -426,17 +437,19 @@ p.listdata,
 
 #signup {
 	color: #fff;
-	padding: 9px;
-	margin-top: 20px;
-	margin-right: 25px;
 	background-color: rgb(203, 24, 30);
+	padding: 9px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid #fff;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px #262626;
+	// box-shadow: 2px 2px 2px #262626;
 	text-decoration: none;
 	transition: all 0.5s ease;
 	text-align: center;
 	&:hover {
 		background-color: #fff;
+		border: 1px solid #CB181E; 
 		cursor: pointer;
 		color: #CB181E;
 		transition: all 0.5s ease;
@@ -445,6 +458,10 @@ p.listdata,
 
 #signup p {
 	font-weight: 400;
+}
+
+.success-message {
+	text-align: center; 
 }
 
 
@@ -479,6 +496,10 @@ footer {
 	display: none;
 }
 
+.success-message {
+	display: none;
+}
+
 // Media Queries
 
 @media (max-width: 1200px) {
@@ -495,6 +516,7 @@ footer {
 	.mainheader {
 		display:none;
 	}
+
 	.slicknav_menu {
 		display: block;
 	}
@@ -523,11 +545,46 @@ footer {
  			text-decoration: underline;
  		}
  	}
-
-
-
 }
 
-.success-message {
-	display: none;
-}
+
+
+
+
+
+
+// #sticky.stick {
+// 	width: 100%;
+// 	background-color: rgba(187, 22, 28, 0.95);
+//     position: fixed;
+//     top: 0;
+//     z-index: 10000;
+// 	clear: both;
+// 	box-shadow: 0 8px 6px -7px #000;
+// 	padding: 5px 5px;
+// 	text-align: center;
+// 	ul {
+// 		padding: 10px;
+// 		// text-transform: uppercase;
+// 	}
+// } 
+
+// #sticky.stick ul li {
+// 	text-align: right;
+// 	display: inline-block;
+// 	// float: right;
+// 	a {
+// 		color: #fff;
+// 		font: 300 23px/150% "Lato", sans-serif;
+// 		padding: 12px;
+// 		padding-right: 40px;
+// 		padding-left: 40px;
+// 		text-decoration: none;
+// 		&:hover {
+// 			// background-color: #BB161C;
+// 			border-bottom: 1px solid #fff;
+// 			// background-color: #fff;
+// 			// color: #BB161C;
+// 		}
+// 	}
+// }

@@ -6,7 +6,9 @@ include('includes/header.php');
 
 ?>
 
-<body class= "home">
+ 
+
+<body class= "home"> 
 
 <div class="line firstline"></div>
 
@@ -23,10 +25,7 @@ include('includes/header.php');
       <h2>Meet Mario Racco</h2>
       <div class="col-lg-4 col-lg-offset-3">
 				<p>King-Vaughan is a new federal riding that will be electing its first Member of Parliament 
-        (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community. 
-        King-Vaughan encompasses much of the City of Vaughan (Maple, Kleinburg and part of 
-        Woodbridge) and the Township of King (including King City, Nobleton, Schomberg and 
-        Kettleby, Pottageville, Laskay, Snowball, Lloydtown, and Strange).</p> 
+        (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community.</p> 
 			</div>
 		</div>
 
@@ -50,13 +49,38 @@ include('includes/header.php');
         </div>
     </div>
 
-      <div class="col-md-6 col-md-offset-3">
-        <p>King-Vaughan is a new federal riding that will be electing its first Member of Parliament 
-        (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community. 
-        King-Vaughan encompasses much of the City of Vaughan (Maple, Kleinburg and part of 
-        Woodbridge) and the Township of King (including King City, Nobleton, Schomberg, 
-        Kettleby, Pottageville, Laskay, Snowball, Lloydtown, and Strange).</p> 
+    
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="ridingcities">
+          <div class="cityinfo">
+            <h4>Riding Cities</h4>
+            <p>Something</p>
+            <p>Something</p>
+            <p>Something</p>
+            <p>Something</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+   
+      <div class="col-sm-4">
+        <div class="ridingboundaries">
+          <div class="boundaryinfo">
+            <h4>Riding Boundaries</h4>
+            <p>Something</p>
+            <p>Something</p>
+            <p>Something</p>
+            <p>Something</p>
+          </div>
+        </div>
+   
+   
+
+
+
+
+      <!-- <div class="col-md-6 col-md-offset-2">
         <div class="ridinginfo col-md-offset-3">
           <p class="listitem">The Riding is Made Up Of:</p>
           <p class="listdata">City of Vaughan</p>
@@ -91,7 +115,7 @@ include('includes/header.php');
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
 </section>
 
@@ -161,5 +185,15 @@ include('includes/header.php');
 
 
 <?php include('includes/footer.php') ?>
+
+<!-- Scroll to Contact Section Home Page only -->
+
+<script>
+  $("#contactscroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".contact").offset().top}, 1200);
+}); 
+
+</script>
 
 </body>

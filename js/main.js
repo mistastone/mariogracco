@@ -1,3 +1,46 @@
+// Riding Image Boxes on Home Page
+
+$('.cityinfo h4').click(function(){
+	$('.cityinfo p').toggle('slow');
+});
+
+$('.boundaryinfo h4').click(function(){
+	$('.boundaryinfo p').toggle('slow');
+});
+
+
+
+
+// Sticky Nav
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");  
+    }
+});
+
+$(document).scroll(function() {
+	if ($(window).width() > 820) {
+		var y = $(this).scrollTop();
+		if (y > 400) {
+		$('.scrollup').fadeIn();
+		} else { 
+		$('.scrollup').fadeOut();
+		}
+	}
+}); 
+
+// Scroll to Top
+
+$('.scrollup').click(function(){
+	$('html, body').animate({scrollTop : 0},800);
+	return false;
+});
+
+
 // Text Slider Plugin
 
 $(document).ready(function(){
@@ -13,7 +56,7 @@ $(document).ready(function(){
 		arrows: true,
 	});
 });
-
+ 
 // Slick Nav
 
 $(document).ready(function(){
@@ -22,20 +65,20 @@ $(document).ready(function(){
 
 // Smooth Scroll
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-    $('a[href*=#]').each(function() {
-        if($(this).attr('href').indexOf("#") == 0) {
-            $(this).click(function(e) {
-              e.preventDefault();
-              var targetOffset = $($(this).attr('href')).offset().top;
-              $('body').animate({scrollTop: targetOffset-45}, 1000);
-              $('#menu').slicknav('close');
-            });
-        }
-    });
+//     $('a[href*=#]').each(function() {
+//         if($(this).attr('href').indexOf("#") == 0) {
+//             $(this).click(function(e) {
+//               e.preventDefault();
+//               var targetOffset = $($(this).attr('href')).offset().top;
+//               $('body').animate({scrollTop: targetOffset-45}, 1000);
+//               $('#menu').slicknav('close');
+//             });
+//         }
+//     });
 
-});
+// });
 
 // AJAX Email send feature
 $('#signup').click(function() {

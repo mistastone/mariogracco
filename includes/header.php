@@ -14,56 +14,36 @@
     <link rel="stylesheet" type="text/css" href="slicknav/slicknav.css"/>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans|Lato|Roboto|Raleway' rel='stylesheet' type='text/css'> -->
      
 </head>
 
-<!-- MAIN NAVIGATION -->
-
+<!-- MAIN NAVIGATION --> 
+ 
   <body>
 
-    <section class="mainheader"> 
+    <div class="scrollup"><i class="fa fa-chevron-circle-up fa-3x"></i></div>
+
+    <header class="mainheader"> 
       <div class="titlebanner">
           <a href="index.php"><h1>Mario G. Racco <span>for King-Vaughan</span></h1></a>
           <h3><a href="donate.php">Make a Donation</h3></a>
       </div>
 
     <div class="white line"></div>
-
+        
         <nav class = "mainnav">
           <ul>
             <li><a href="index.php">Home</li></a>
             <li><a href="learnmore.php">Learn More</li></a>
             <li><a href="involved.php">Get Involved</li></a>
-            <li><a href="index.php#contact">Contact</li></a> 
+            <li><a id="contactscroll" href="index.php#contact">Contact</li></a> 
           </ul>
         </nav>
 
-    </section>
-
-   <!--  <section class = "mainnavigation">
-      <h1>Mario G. Racco</h1>
-      <ul>
-     
-        <li><a href="index.php">Home</li></a>
-        <li><a href="learnmore.php">Learn More</li></a>
-        <li><a href="involved.php">Get Involved</li></a>
-        <li><a href="index.php#contact">Contact</li></a>
-      </ul>
-      <div class="redline"></div>
-      
-
-    </section> -->
-
-
-<!-- <div class="line firstline"></div> -->
-  
-    <!-- <div class="hero">
-      <img src="images/bannerbigedit.jpg" class = "img-responsive" alt="">
-    </div> -->
-  
-
+    </header>
 
 <!-- MOBILE NAVIGATION -->
 
@@ -74,7 +54,7 @@
         <li><a href="index.php">Home</li></a>
         <li><a href="learnmore.php">Learn More</li></a>
         <li><a href="involved.php">Get Involved</li></a>
-        <li><a href="index.php#contact">Contact</li></a>
+        <li><a href="index.php#contact">Contact</li></a> 
       </ul>
     </div>
   </nav>

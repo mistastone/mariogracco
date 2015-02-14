@@ -57,20 +57,20 @@ include('includes/header.php');
 			<div class="col-lg-4 col-lg-offset-4">
 
 			<div class="button sign" id = "signup"> 
-				<p>Sign up</p>
+				<p>Sign up</p> 
 			</div>
 
 			</div>
 			
-			<div class = "success-message">
-				<p>A confirmation email has been sent to you</p>
-			</div>
 		
 		</div>
 	</div> 
 	
-
 </section>
+
+<div class = "success-message">
+	<p>Thank you for signing up.</p>
+</div>
 
 
 <?php include('includes/footer.php') ?>
