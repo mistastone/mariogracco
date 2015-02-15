@@ -6,8 +6,6 @@ include('includes/header.php');
 
 ?>
 
- 
-
 <body class= "home"> 
 
 <div class="line firstline"></div>
@@ -28,7 +26,7 @@ include('includes/header.php');
         (MP) in 2015. I want to be your first MP, helping to shape and build a bright future for the entire community.</p> 
 			</div>
 		</div>
-
+ 
 	<div class="meetimage">
 		<div class="col-lg-2">
 		<img src="images/marioheadshot.jpg" class="img-responsive" alt="Mario G. Racco">
@@ -50,30 +48,61 @@ include('includes/header.php');
     </div>
 
     
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-md-4 col-md-offset-2">
         <div class="ridingcities">
           <div class="cityinfo">
-            <h4>Riding Cities</h4>
-            <p>Something</p>
-            <p>Something</p>
-            <p>Something</p>
-            <p>Something</p>
+            <h4>Cities in the Riding</h4>
+            <i class="fa fa-chevron-right fa-lg"></i>
+            <div class="line boxline"></div>
+            <div class="vaughan">
+              <h6>City of Vaughan</h6>
+              <ul class = "vaughanlist">
+                <li>Maple</li>
+                <li>Kleinburg</li>
+                <li>A small part of woodbridge</li>
+              </ul>
+            </div>
+            <div class="kingcity">
+              <h6>Township of King</h6>
+             <ul class = "firstfour">
+               <li>King City</li>
+               <li>Nobleton</li>
+               <li>Schomberg</li>
+               <li>Kettleby</li>
+             </ul>
+             <ul class ="lastfour">
+               <li>Pottageville</li>
+               <li>Laskay</li>
+               <li>Snowball</li>
+               <li>Lloydtown</li>
+               <li>Strange</li>
+             </ul>
+            </div>  
           </div>
         </div>
       </div>
     </div>
 
    
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <div class="ridingboundaries">
           <div class="boundaryinfo">
             <h4>Riding Boundaries</h4>
-            <p>Something</p>
-            <p>Something</p>
-            <p>Something</p>
-            <p>Something</p>
+            <i class="fa fa-chevron-right fa-lg"></i>
+            <div class="line boxline"></div>
+               <ul class = "roadlist">
+                <li><span>North</span> - Highway 9</li>
+                <li><span>West</span> - Highway 50</li>
+                <li><span>East</span> - Bathurst Street</li>
+                <li><span>South</span> - Highway 400 to Bathurst along Rutherford Road<li>
+                <li><span>South</span> - Highway 400 to Highway 50 along Major Mackenzie</li>
+                </ul>
+            </div>
+            </div>  
           </div>
         </div>
+      </div>
+    </div>
    
    
 
@@ -170,7 +199,7 @@ include('includes/header.php');
 
 <section class = "container contact mainsection" id="contact">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12"> 
         <h2>Contact Mario</h2>
         <p>21 Checker Court</p>
         <p>Vaughan, Ontario</p>

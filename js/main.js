@@ -1,16 +1,16 @@
 // Riding Image Boxes on Home Page
 
-$('.cityinfo h4').click(function(){
-	$('.cityinfo p').toggle('slow');
+$('.ridingcities').hover(function(){
+	$('.vaughan, .kingcity').toggle('fast');
 });
 
-$('.boundaryinfo h4').click(function(){
-	$('.boundaryinfo p').toggle('slow');
+$('.ridingboundaries').hover(function(){
+	$('.roadlist').toggle('fast');
 });
 
 
 
-
+ 
 // Sticky Nav
 
 $(window).scroll(function() {
