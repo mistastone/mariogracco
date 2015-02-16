@@ -21,6 +21,15 @@ $(window).scroll(function() {
         $('header').removeClass("sticky");  
     }
 });
+ 
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('.twitterlink, .facebooklink, .maillink').addClass("sticky");
+    }
+    else{
+        $('.twitterlink, .facebooklink, .maillink').removeClass("sticky");  
+    }
+});
 
 $(document).scroll(function() {
 	if ($(window).width() > 820) {

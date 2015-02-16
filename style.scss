@@ -135,7 +135,7 @@ h1 {
 	color: #fff;
 	font: 300 46px/150% "Lato",sans-serif;
 	padding-top: 10px;
-	padding-left: 20px;
+	padding-left: 90px;
 	-webkit-transition: all 0.4s ease;
     transition: all 0.4s ease
 	// margin-left: 40px;
@@ -171,6 +171,41 @@ body {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.twitterlink,
+.facebooklink,
+.maillink {
+	position: fixed;
+	z-index: 99999;
+	a {
+		font-size: 17px;
+		color: #fff;
+		&:hover {
+			color: #f6f6f6;
+		}
+	}
+}
+
+.twitterlink {
+	top: 115px;
+	right: 200px;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s eas
+}
+
+.facebooklink {
+	top: 115px;
+	right: 154px;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.maillink {
+	top: 114px;
+	right: 95px;
+	-webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
 
 .hero img {
@@ -212,8 +247,8 @@ header.mainheader {
 		padding-right: 40px;
 		padding-left: 40px; 
 		text-decoration: none;
-		-webkit-transition: all 0.4s ease;
-    	transition: all 0.4s ease;
+		// -webkit-transition: all 0.4s ease;
+  //   	transition: all 0.4s ease;
 		&:hover {
 			// background-color: #BB161C;
 			border-bottom: 1px solid #fff;
@@ -234,10 +269,24 @@ header.sticky h1 {
 }
 
 header.sticky h3 a {
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 16px; 
 	margin-top: 9px;
 	padding: 7px;
+}
+
+.twitterlink.sticky {
+	top: 87px;
+	right: 200px;
+}
+
+.facebooklink.sticky {
+	top: 87px;
+	right: 154px;
+}
+
+.maillink.sticky {
+	top: 86px;
+	right: 95px;
 }
 
 /* Title Banner and Donation Button =================================================== */
@@ -256,7 +305,7 @@ header.sticky h3 a {
 	color: #CB181E;
 	padding: 9px;
 	margin-top: 20px;
-	margin-right: 25px;
+	margin-right: 95px;
 	background-color: #fff;
 	border: 1px solid #fff;
 	border-radius: 5px;
@@ -569,6 +618,26 @@ footer {
 }
 }
 
+@media (max-width: 1100px) {
+.twitterlink,
+.facebooklink,
+.maillink {
+	display: none;
+}
+}
+
+@media (max-width: 880px) {
+h1 {
+	padding-left: 41px;
+}
+
+.titlebanner h3 a {
+	margin-right: 44px;
+}
+
+}
+
+
 @media (max-width: 820px) {
 body {
 	padding-top: 68px;
@@ -594,24 +663,39 @@ display: block;
 	padding-top: 14px;
 }
  
-body > div.slicknav_menu > ul > li:nth-child(1) > a {
+body > div.slicknav_menu > ul > li:nth-child(1) > a { 
 	background: #fff;
 	color: #BB161C;
 	font-weight: 400;
 	padding: 12px;
 	margin-top: 10px;
 	border-radius: 5px;
-	box-shadow: 2px 2px 2px #262626; 
+	// box-shadow: 2px 2px 2px #262626; 
 	&:hover{
 		text-decoration: underline;
 	}
 }
+
+ul.sociallinks li {
+	text-align: center;
+	padding: 10px 10px; 
+	a {
+	display: inline;
+	&:hover {
+		color: #f6f6f6;
+	}
+}
+}
+
 }
 
 @media (max-width: 500px) {
-.ridingcities,
+.ridingcities {
+	background-position-x: 46%;
+} 
+
 .ridingboundaries {
-	background-position-x: 50%;
+	background-position-x: 62%;
 }
 
 .cityinfo ul li,  
